@@ -15,17 +15,17 @@ const cells: CellProps[] = [
   {
     id: 1,
     icon: <Icon28Chat />,
-    text: 'Chat Settings',
+    text: 'Cash App',
   },
   {
     id: 2,
     icon: <Icon28Devices />,
-    text: 'Data and Storage',
+    text: 'Stripe',
   },
   {
     id: 3,
     icon: <Icon28Stats />,
-    text: 'Devices',
+    text: 'Revolut',
   },
 ];
 

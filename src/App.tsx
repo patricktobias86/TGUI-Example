@@ -1,22 +1,27 @@
-import React from 'react';
+import React from "react";
+import { Page, Section, Cell, ImageAvatar } from '@twa-dev/mark42';
 
-import { AppRoot, List } from '@xelene/tgui';
-import { CellSection } from './components/CellSection';
-import { FormSection } from './components/FormSection/FormSection';
-import { BannerSection } from './components/BannerSection';
-import { TimelineSection } from './components/TimelineSection/TimelineSection';
-import { TooltipSection } from './components/TooltipSection/TooltipSection';
-import { ModalSection } from './components/ModalSection/ModalSection';
 
 export const App = () => (
-  <AppRoot>
-    <List>
-      <CellSection />
-      <FormSection />
-      <BannerSection />
-      <TimelineSection />
-      <TooltipSection />
-      <ModalSection />
-    </List>
-  </AppRoot>
+<Page mode="secondary">
+  <Section
+    description="Share your contacts with the community. It will help other members to reach you faster."
+    header="Public contacts">
+    <Cell
+    before={<ImageAvatar size={48} src="https://primeupyour.life/index_files/65071567acf34e9a15edafa9_cashapp.webp"/>}
+    description="$PrimeUpYourLife">
+      Cash App
+    </Cell>
+    <Cell
+    before={<ImageAvatar size={48} src="https://primeupyour.life/index_files/stripe_color.png"/>}
+    description="Minimum $20">
+      Apple/Google Pay
+    </Cell>
+    <Cell
+    before={<ImageAvatar size={48} src="https://primeupyour.life/index_files/6507155387c260077719f930_revolut.png"/>}
+    description="Any currency accepted">
+      Revolut
+    </Cell>
+  </Section>
+</Page>
 );
